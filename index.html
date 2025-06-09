@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CITI Bank Help Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      button {
+        transform: scale(1.1);
+      }
+      button:hover {
+        transform: scale(1.15);
+        transition: all ease 0.4s;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#0D1117] text-gray-200 font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-[#0077FF] text-white text-center py-1 font-bold text-xl md:text-3xl tracking-wide shadow-md">
+      <img src="https://1000logos.net/wp-content/uploads/2016/11/Citibank-Logo.png" height="45px" width="180px" class="mx-auto" alt="">
+    </header>
+
+    <!-- Main Section -->
+    <main class="bg-[#161B22] text-center py-12 px-4">
+      <h1 class="font-extrabold text-white text-2xl md:text-4xl mb-3">24/7 Customer Support</h1>
+      <p class="text-gray-400 text-sm md:text-base mb-6 max-w-md mx-auto">
+        Need help with your Wells Fargo account? Our experts are available anytime to assist you.
+      </p>
+      <a onclick="callSupport()">
+        <button
+          class="bg-[#1D9BF0] text-white font-semibold rounded-lg px-6 py-3 shadow-lg hover:bg-[#0D8AEF] transition duration-300 ease-in-out"
+          type="button"
+        >
+          📞 +1 833-534-7334
+        </button>
+      </a>
+    </main>
+
+    <!-- Help Topics Section -->
+    <section class="text-center py-10 px-4 bg-[#0D1117]">
+      <h2 class="font-bold text-white text-2xl md:text-3xl mb-6">How We Can Help</h2>
+      <div class="max-w-lg mx-auto space-y-3 text-lg">
+        <div class="bg-[#21262D] text-gray-300 py-3 px-4 rounded-md shadow-sm">🔐 Account login issues</div>
+        <div class="bg-[#21262D] text-gray-300 py-3 px-4 rounded-md shadow-sm">💻 Online banking help</div>
+        <div class="bg-[#21262D] text-gray-300 py-3 px-4 rounded-md shadow-sm">💳 Lost or stolen card</div>
+        <div class="bg-[#21262D] text-gray-300 py-3 px-4 rounded-md shadow-sm">⚠️ Report fraud/unauthorized use</div>
+        <div class="bg-[#21262D] text-gray-300 py-3 px-4 rounded-md shadow-sm">📱 Mobile app support</div>
+      </div>
+      <a onclick="callSupport()">
+        <button
+          class="mt-8 bg-[#1D9BF0] text-white font-semibold rounded-lg px-6 py-3 shadow-lg hover:bg-[#0D8AEF] transition duration-300 ease-in-out"
+          type="button"
+        >
+          📞 +1 833-534-7334
+        </button>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#161B22] text-gray-500 text-center text-xs py-4 mt-auto">
+      © 2025 CITI Bank Support — This is a support information page for customers.
+    </footer>
+
+    <!-- Call Function -->
+    <script>
+      function callSupport() {
+        window.location.href = 'tel:+18335347334';
+      }
+    </script>
+  </body>
+</html>
